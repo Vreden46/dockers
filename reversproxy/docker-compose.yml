@@ -1,0 +1,17 @@
+
+version: '3'
+
+services:
+  webserver1:
+    image: nginx
+    container_name: proxy
+    ports:
+      -  "80:80"
+      -  "443:443"
+    volumes:
+      - ./html:/html
+      - ./zert:/zert
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    command: ["bash", "-c", "apt-get update && apt-get install -y nano && nginx -g 'daemon off;'"]
+    restart: always
+    
