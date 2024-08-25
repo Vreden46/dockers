@@ -1,0 +1,9 @@
+docker build -t cron-i-zert .
+
+
+docker run --name cron-c-zert -d \
+  -v ./cron.log:/var/log/cron.log \
+  -v ./key/id_rsa:/root/.ssh/id_rsa:ro \
+  -v ./zert:/etc/letsencrypt \
+  cron-i-zert
+

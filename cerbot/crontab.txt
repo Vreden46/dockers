@@ -1,0 +1,2 @@
+0 0 * * * /certbot/renew_and_transfer.sh >> /var/log/cron.log 2>&1
+# New line character required!
