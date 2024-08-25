@@ -3,7 +3,7 @@
 # Variablen
 REMOTE_SERVER="xxx.xxx.xxx.xxx" # Remote-Server-IP oder Hostname
 REMOTE_USER="sshuser"            # Benutzername auf dem Remote-Server
-SSH_KEY="/sshuser.ssh/id_rsa"   # Pfad zum privaten SSH-Schlüssel
+SSH_KEY="/sshuser/.ssh/id_rsa"   # Pfad zum privaten SSH-Schlüssel
 DOMAIN="example.site"      # Domain für das Zertifikat
 EMAIL="sshuser@example.site"    # Email für Certbot
 WEBROOT="/home/sshuser/docker/proxy/html" # Pfad zum Webroot auf dem Remote-Server, der Pfad ist nach Installation unterschiedlich
